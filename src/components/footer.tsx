@@ -154,8 +154,8 @@ function Copyright() {
 
 export function Footer() {
   return (
-    <footer>
-      <Gradient className="relative">
+    <footer className='p-2'>
+      <Gradient className="relative rounded-lg">
         <div className="absolute inset-2 rounded-lg bg-white/80" />
         <Container>
           <CallToAction />
