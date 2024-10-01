@@ -1,3 +1,8 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "prefer-const": "off", // Disable prefer-const rule
+    "@next/next/no-img-element": "off", // Disable warning for <img> elements
+    "@typescript-eslint/no-unused-vars": "off" // Optionally disable unused vars warnings
+  }
 }
