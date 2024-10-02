@@ -11,7 +11,7 @@ import { LogoCluster } from '@/components/logo-cluster'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
-import { Screenshot } from '@/components/screenshot'
+// import { Screenshot } from '@/components/screenshot'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
 // import { ChevronRightIcon } from '@heroicons/react/16/solid'
@@ -39,7 +39,7 @@ function Hero() {
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="#">Get started</Button>
-            <Button variant="secondary" href="/pricing">
+            <Button variant="secondary" href="/benefits">
               See benefits
             </Button>
           </div>
@@ -49,19 +49,28 @@ function Hero() {
   )
 }
 
-function FeatureSection() {
+function IntroSection() {
   return (
     <div className="overflow-hidden">
       <Container className="pb-24">
+				<Subheading>Consult Net Zero</Subheading>
         <Heading as="h2" className="max-w-3xl">
-          A snapshot of your entire sales pipeline.
+					 Simplifying Sustainable Retrofitting
         </Heading>
-        <Screenshot
+				<div className='flex gap-6 flex-col md:flex-row'>
+
+					<p className='mt-8 max-w-xl text-lg text-gray-950/75 sm:text-xl'>Consult Net Zero is a specialist property consultancy dedicated to delivering high-quality, cost-effective retrofit projects. We utilise local expertise and PAS2035 knowledge to ensure that sustainable housing upgrades are accessible for social landlords and local authorities seeking to enhance their properties.</p>
+
+					<p className='mt-8 max-w-xl text-lg text-gray-950/75 sm:text-xl'>Our mission is to reduce fuel poverty and improve housing standards while helping communities achieve long-term energy efficiency through our &quot;Retrofitting Made Simple&quot; approach. By focusing on practical solutions and clear action, we cut through the confusion often associated with complex retrofitting initiatives.</p>
+
+				</div>
+		
+        {/* <Screenshot
           width={1216}
           height={768}
           src="/screenshots/app.png"
           className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
-        />
+        /> */}
       </Container>
     </div>
   )
@@ -70,36 +79,38 @@ function FeatureSection() {
 function BentoSection() {
   return (
     <Container>
-      <Subheading>Sales</Subheading>
+      <Subheading>Services</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        Know more about your customers than they do.
+				Our Comprehensive Services for Sustainable Retrofitting
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
-          eyebrow="Insight"
-          title="Get perfect clarity"
-          description="Consult Net Zero uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+          eyebrow="Assessment"
+          title="Energy audits"
+          description="Comprehensive assessments of your property's energy use to identify inefficiencies and opportunities for improvement."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+						<div></div>
+            // <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
         />
         <BentoCard
-          eyebrow="Analysis"
-          title="Undercut your competitors"
-          description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged."
+          eyebrow="Finance"
+          title="Funding guidance"
+          description="Expert advice on securing funding and grants to support your retrofitting projects and enhance financial viability."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+						<div></div>
+            // <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
         <BentoCard
-          eyebrow="Speed"
-          title="Built for power users"
-          description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts."
+          eyebrow="Education"
+          title="Sustainability training"
+          description="Tailored training programs for staff and stakeholders to foster a culture of sustainability and effective energy management."
           graphic={
             <div className="flex size-full pl-10 pt-10">
               <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
@@ -108,16 +119,16 @@ function BentoSection() {
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
-          eyebrow="Source"
-          title="Get the furthest reach"
-          description="Bypass those inconvenient privacy laws to source leads from the most unexpected places."
+          eyebrow="Execution"
+          title="Project management"
+          description="End-to-end project management services to ensure smooth implementation of retrofit initiatives, from planning to execution."
           graphic={<LogoCluster />}
           className="lg:col-span-2"
         />
         <BentoCard
-          eyebrow="Limitless"
-          title="Sell globally"
-          description="Consult Net Zero helps you sell in locations currently under international embargo."
+          eyebrow="Tracking"
+          title="Performance monitoring"
+          description="Ongoing monitoring and reporting of energy performance metrics to track progress and optimise energy efficiency over time."
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
@@ -130,17 +141,26 @@ function DarkBentoSection() {
   return (
     <div className="mx-2 mt-2 rounded-lg bg-gray-900 py-32">
       <Container>
-        <Subheading dark>Outreach</Subheading>
+        <Subheading dark>Our Approach</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
-          Customer outreach has never been easier.
+					Guiding Principles of Our Strategy
         </Heading>
 
+				<div className='flex gap-6 flex-col md:flex-row'>
+
+				<p className='mt-8 max-w-xl text-lg text-gray-50/75 sm:text-xl'>At Consult Net Zero, we emphasise a strategic and results-driven approach to sustainable retrofitting. Our methodology combines in-depth analysis of your current energy performance with tailored solutions that drive measurable improvements. We ensure that our clients are equipped with the knowledge and tools necessary to play an active role in achieving their net zero objectives.</p>
+
+				<p className='mt-8 max-w-xl text-lg text-gray-50/75 sm:text-xl'>We recognise the complexities involved in sustainable retrofitting but remain focused on delivering clear pathways to success. Our team collaborates closely with social landlords and local authorities to create customized strategies that address unique challenges, optimize funding opportunities, and ultimately enhance energy efficiency across communities.</p>
+
+				</div>
+
+				
         <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
           <BentoCard
             dark
-            eyebrow="Networking"
-            title="Sell at the speed of light"
-            description="Our Consult Net Zero assistants analyze the sentiment of your conversations in real time, ensuring you're always one step ahead."
+            eyebrow="Guidance"
+            title="Tailored Roadmaps"
+            description="Customised roadmaps outline clear steps to achieve net zero, tailored to your energy performance and funding opportunities."
             graphic={
               <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
@@ -149,26 +169,26 @@ function DarkBentoSection() {
           />
           <BentoCard
             dark
-            eyebrow="Integrations"
-            title="Meet leads where they are"
-            description="With thousands of integrations, no one will be able to escape your cold outreach."
+            eyebrow="Collaboration"
+            title="Stakeholder Engagement"
+            description="We facilitate collaboration among stakeholders to ensure alignment and commitment to sustainable outcomes."
             graphic={<LogoTimeline />}
             // `!overflow-visible` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 !overflow-visible lg:col-span-2 lg:rounded-tr-4xl"
           />
           <BentoCard
             dark
-            eyebrow="Meetings"
-            title="Smart call scheduling"
-            description="Automatically insert intro calls into your leads' calendars without their consent."
+            eyebrow="Assistance"
+            title="Ongoing Support"
+            description="Continuous support throughout implementation helps you navigate challenges and enhance energy efficiency.."
             graphic={<LinkedAvatars />}
             className="lg:col-span-2 lg:rounded-bl-4xl"
           />
           <BentoCard
             dark
-            eyebrow="Engagement"
-            title="Become a thought leader"
-            description="Consult Net Zero automatically writes LinkedIn posts that relate current events to B2B sales, helping you build a reputation as a thought leader."
+            eyebrow="Analytics"
+            title="Data-Driven Insights"
+            description="Advanced analytics provide insights into your carbon footprint, enabling informed decisions and progress tracking."
             graphic={
               <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
             }
@@ -185,12 +205,12 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <main className='mb-24'>
+      <main className='mb-1'>
         {/* <Container className="mt-10">
           <LogoCloud />
         </Container> */}
         <div className="bg-gradient-to-b from-white from-50% to-gray-100 py-32">
-          <FeatureSection />
+          <IntroSection />
           <BentoSection />
         </div>
         <DarkBentoSection />

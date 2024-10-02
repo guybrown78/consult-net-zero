@@ -77,7 +77,7 @@ function Sitemap() {
       <div>
         <SitemapHeading>Contact</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">07933 123456</SitemapLink>
+          <SitemapLink href="#">(+44)7793 538 718</SitemapLink>
           <SitemapLink href="#">lee@consultnetzero.co.uk</SitemapLink>
         </SitemapLinks>
       </div>
