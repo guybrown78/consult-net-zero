@@ -90,8 +90,8 @@ function BentoSection() {
           title="Energy audits"
           description="Comprehensive assessments of your property's energy use to identify inefficiencies and opportunities for improvement."
           graphic={
-						<div></div>
-            // <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+						// <div></div>
+            <div className="h-80 bg-[url(/services/assessment.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -101,8 +101,7 @@ function BentoSection() {
           title="Funding guidance"
           description="Expert advice on securing funding and grants to support your retrofitting projects and enhance financial viability."
           graphic={
-						<div></div>
-            // <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+						<div className="h-80 bg-[url(/services/finance.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
@@ -112,24 +111,29 @@ function BentoSection() {
           title="Sustainability training"
           description="Tailored training programs for staff and stakeholders to foster a culture of sustainability and effective energy management."
           graphic={
-            <div className="flex size-full pl-10 pt-10">
-              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
-            </div>
+            <div className="h-80 bg-[url(/services/education.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
           }
+					fade={['bottom']}
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
           eyebrow="Execution"
           title="Project management"
           description="End-to-end project management services to ensure smooth implementation of retrofit initiatives, from planning to execution."
-          graphic={<LogoCluster />}
+          graphic={
+						<div className="h-80 bg-[url(/services/execution.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
+					}
+					fade={['bottom']}
           className="lg:col-span-2"
         />
         <BentoCard
           eyebrow="Tracking"
           title="Performance monitoring"
           description="Ongoing monitoring and reporting of energy performance metrics to track progress and optimise energy efficiency over time."
-          graphic={<Map />}
+          graphic={
+						<div className="h-80 bg-[url(/services/tracking.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
+					}
+					fade={['bottom']}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>
@@ -162,9 +166,9 @@ function DarkBentoSection() {
             title="Tailored Roadmaps"
             description="Customised roadmaps outline clear steps to achieve net zero, tailored to your energy performance and funding opportunities."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/networking.png)] bg-[size:851px_344px] bg-no-repeat" />
+							<div className="h-80 bg-[url(/approach/planning.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
             }
-            fade={['top']}
+            fade={['top', 'bottom']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
           />
           <BentoCard
@@ -172,8 +176,9 @@ function DarkBentoSection() {
             eyebrow="Collaboration"
             title="Stakeholder Engagement"
             description="We facilitate collaboration among stakeholders to ensure alignment and commitment to sustainable outcomes."
-            graphic={<LogoTimeline />}
+            graphic={<div className="h-80 bg-[url(/approach/engagement.jpg)] bg-cover bg-no-repeat bg-opacity-90" />}
             // `!overflow-visible` is needed to work around a Chrome bug that disables the mask on the graphic.
+						fade={['top', 'bottom']}
             className="z-10 !overflow-visible lg:col-span-2 lg:rounded-tr-4xl"
           />
           <BentoCard
@@ -181,7 +186,8 @@ function DarkBentoSection() {
             eyebrow="Assistance"
             title="Ongoing Support"
             description="Continuous support throughout implementation helps you navigate challenges and enhance energy efficiency.."
-            graphic={<LinkedAvatars />}
+            graphic={<div className="h-80 bg-[url(/approach/support.jpg)] bg-cover bg-no-repeat bg-opacity-90" />}
+						fade={['top', 'bottom']}
             className="lg:col-span-2 lg:rounded-bl-4xl"
           />
           <BentoCard
@@ -189,10 +195,8 @@ function DarkBentoSection() {
             eyebrow="Analytics"
             title="Data-Driven Insights"
             description="Advanced analytics provide insights into your carbon footprint, enabling informed decisions and progress tracking."
-            graphic={
-              <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-[size:851px_344px] bg-no-repeat" />
-            }
-            fade={['top']}
+						graphic={<div className="h-80 bg-[url(/approach/analytics.jpg)] bg-cover bg-no-repeat bg-opacity-90" />}
+						fade={['top', 'bottom']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
           />
         </div>
