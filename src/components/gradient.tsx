@@ -1,5 +1,6 @@
 import { clsx } from 'clsx'
 
+// teal : 7ECBB7
 export function Gradient({
   className,
   ...props
@@ -9,7 +10,7 @@ export function Gradient({
       {...props}
       className={clsx(
         className,
-        'bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#95C11F] from-[28%] via-[#47A62B] via-[70%] to-[#008D36] sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]',
+        'bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#7ECBB7] from-[28%] via-[#47A62B] via-[70%] to-[#008D36] sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]',
       )}
     />
   )

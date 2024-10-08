@@ -20,16 +20,17 @@ const links = [
 
 function DesktopNav() {
   return (
-    <nav className="relative hidden lg:flex">
+    <nav className="relative hidden lg:flex items-center">
       {links.map(({ href, label }) => (
-        <PlusGridItem key={href} className="relative flex">
+        // <PlusGridItem key={href} className="relative flex">
           <Link
+					key={href}
             href={href}
-            className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-[hover]:bg-black/[2.5%]"
+            className="flex items-center px-4 py-3 text-base font-medium text-gray-950 bg-blend-multiply data-[hover]:bg-black/[2.5%] h-16"
           >
             {label}
           </Link>
-        </PlusGridItem>
+        // </PlusGridItem>
       ))}
     </nav>
   )
@@ -83,7 +84,7 @@ export function Navbar({ banner }: { banner?: React.ReactNode }) {
           <div className="relative flex gap-6">
             <PlusGridItem className="py-3">
               <Link href="/" title="Home">
-                <LogoBlack className="h-15" />
+                <LogoBlack className="h-32" />
               </Link>
             </PlusGridItem>
             {banner && (

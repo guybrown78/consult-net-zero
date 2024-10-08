@@ -3,7 +3,7 @@ import { Button } from './button'
 import { Container } from './container'
 import { Gradient } from './gradient'
 import { Link } from './link'
-import { Logo } from './logo'
+import { Logo, LogoBlack } from './logo'
 import { Subheading } from './text'
 
 function CallToAction() {
@@ -155,17 +155,17 @@ function Copyright() {
 export function Footer() {
   return (
     <footer className='p-2'>
-      <Gradient className="relative rounded-lg">
-        <div className="absolute inset-2 rounded-lg bg-white/80" />
+      <Gradient className="relative rounded-none">
+        <div className="absolute inset-2 rounded-none bg-white/65" />
         <Container>
           <CallToAction />
           <PlusGrid className="pb-16">
             <PlusGridRow>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
-                <div className="col-span-2 flex">
-                  <PlusGridItem className="pt-6 lg:pb-6">
-                    <Logo className="h-11" />
-                  </PlusGridItem>
+                <div className="col-span-2 flex items-center justify-start">
+                  {/* <PlusGridItem className="pt-6 lg:pb-6"> */}
+                    <LogoBlack className="h-28" />
+                  {/* </PlusGridItem> */}
                 </div>
                 <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
                   <Sitemap />

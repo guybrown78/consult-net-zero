@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 function Hero() {
   return (
     <div className="relative">
-      <Gradient className="absolute inset-2 bottom-0 rounded-lg ring-1 ring-inset ring-black/5 opacity-70" />
+      <Gradient className="absolute inset-2 bottom-0 rounded-none ring-1 ring-inset ring-black/5 opacity-70" />
       <Container className="relative">
         <Navbar />
 
@@ -143,7 +143,7 @@ function BentoSection() {
 
 function DarkBentoSection() {
   return (
-    <div className="mx-2 mt-2 rounded-lg bg-gray-900 py-32">
+    <div className="mx-2 mt-2 rounded-none bg-gray-900 py-32">
       <Container>
         <Subheading dark>Our Approach</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">

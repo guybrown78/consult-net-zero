@@ -29,7 +29,7 @@ export function BentoCard({
       data-dark={dark ? 'true' : undefined}
       className={clsx(
         className,
-        'group relative flex flex-col overflow-hidden rounded-lg',
+        'group relative flex flex-col overflow-hidden',
         'bg-white shadow-sm ring-1 ring-black/5',
         'data-[dark]:bg-gray-800 data-[dark]:ring-white/15',
       )}
