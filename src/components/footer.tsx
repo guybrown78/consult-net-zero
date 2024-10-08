@@ -12,9 +12,9 @@ function CallToAction() {
       <hgroup>
         <Subheading>Get started</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to transport&nbsp;your&nbsp;properties?
+          Ready to Retrofit&nbsp;your&nbsp;portfolio?
         </p>
-				<p className="mt-3 text-2xl font-medium tracking-tight text-gray-950 sm:text-3xl">Let&apos;s make progress&nbsp;together.</p>
+				<p className="mt-3 text-2xl font-medium tracking-tight text-gray-950 sm:text-3xl">Let&apos;s reduce fuel&nbsp;poverty&nbsp;together.</p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
 				Contact us today to start your journey towards&nbsp;net&nbsp;zero

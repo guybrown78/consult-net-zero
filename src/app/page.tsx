@@ -31,7 +31,7 @@ function Hero() {
 
         <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32">
           <h1 className="font-display text-balance text-6xl/[0.9] font-medium tracking-tight text-gray-950 sm:text-8xl/[0.8] md:text-9xl/[0.8]">
-						Retrofitting Made Simple.
+						Net Zero<br />Made Simple.
           </h1>
 					<p className="mt-8 max-w-xl text-xl/7 font-bold text-gray-950/75 sm:text-2xl/8">Transform your properties with cost-effective, high-quality retrofitting solutions.</p>
           <p className="mt-4 max-w-xl text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
@@ -55,13 +55,13 @@ function IntroSection() {
       <Container className="pb-24">
 				<Subheading>Consult Net Zero</Subheading>
         <Heading as="h2" className="max-w-3xl">
-					 Simplifying Sustainable Retrofitting
+					Customer Focused Retrofitting.
         </Heading>
-				<div className='flex gap-6 flex-col md:flex-row'>
+				<div className='flex gap-6 flex-col lg:flex-row'>
 
-					<p className='mt-8 max-w-xl text-lg text-gray-950/75 sm:text-xl'>Consult Net Zero is a specialist property consultancy dedicated to delivering high-quality, cost-effective retrofit projects. We utilise local expertise and PAS2035 knowledge to ensure that sustainable housing upgrades are accessible for social landlords and local authorities seeking to enhance their properties.</p>
+					<p className='mt-8 max-w-xl text-lg text-gray-950/75 sm:text-xl text-justify'>Consult Net Zero is a specialist property consultancy dedicated to delivering high-quality, cost-effective retrofit projects. We prioritise comprehensive customer and tenant engagement, developing tailored strategies that align with the specific needs of each tenant and overall project.</p>
 
-					<p className='mt-8 max-w-xl text-lg text-gray-950/75 sm:text-xl'>Our mission is to reduce fuel poverty and improve housing standards while helping communities achieve long-term energy efficiency through our &quot;Retrofitting Made Simple&quot; approach. By focusing on practical solutions and clear action, we cut through the confusion often associated with complex retrofitting initiatives.</p>
+					<p className='mt-8 max-w-xl text-lg text-gray-950/75 sm:text-xl text-justify'>Our mission is to reduce fuel poverty and improve housing standards while helping communities achieve long-term energy efficiency through our &quot;Retrofit Made Simple&quot; approach. By focusing on practical solutions and clear action, we cut through the confusion often associated with complex retrofitting initiatives.</p>
 
 				</div>
 		
@@ -81,20 +81,20 @@ function BentoSection() {
     <Container>
       <Subheading>Services</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-				Our Comprehensive Services for Sustainable Retrofitting
+				Our Comprehensive Services for High Quality Retrofitting
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
           eyebrow="Assessment"
-          title="Energy audits"
+          title="Domestic Energy Assessment"
           description="Comprehensive assessments of your property's energy use to identify inefficiencies and opportunities for improvement."
           graphic={
 						// <div></div>
             <div className="h-80 bg-[url(/services/assessment.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
           }
           fade={['bottom']}
-          className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
+          className="max-lg:rounded-t-4xl lg:col-span-2 lg:rounded-tl-4xl"
         />
         <BentoCard
           eyebrow="Finance"
@@ -104,17 +104,17 @@ function BentoSection() {
 						<div className="h-80 bg-[url(/services/finance.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
           }
           fade={['bottom']}
-          className="lg:col-span-3 lg:rounded-tr-4xl"
+          className="lg:col-span-2 "
         />
         <BentoCard
-          eyebrow="Education"
-          title="Sustainability training"
-          description="Tailored training programs for staff and stakeholders to foster a culture of sustainability and effective energy management."
+          eyebrow="Compliance"
+          title="PAS2035 Services"
+          description="All elements of the PAS2035 compliance requirements, including: Domestic Energy Assessment, Retrofit Assessment, Retrofit Coordination, Retrofit Design and Retrofit Evaluation."
           graphic={
-            <div className="h-80 bg-[url(/services/education.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
+            <div className="h-80 bg-[url(/services/compliance.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
           }
 					fade={['bottom']}
-          className="lg:col-span-2 lg:rounded-bl-4xl"
+          className="lg:col-span-2 lg:rounded-tr-4xl"
         />
         <BentoCard
           eyebrow="Execution"
@@ -124,14 +124,24 @@ function BentoSection() {
 						<div className="h-80 bg-[url(/services/execution.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
 					}
 					fade={['bottom']}
+          className="lg:col-span-2 lg:rounded-bl-4xl"
+        />
+					<BentoCard
+          eyebrow="Testing"
+          title="Air Tightness Testing"
+          description="Residential or commercial Air Tightness testing to satisfy Building regs. Part L or PAS2035 background air permeability requirements."
+          graphic={
+						<div className="h-80 bg-[url(/services/testing.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
+					}
+					fade={['bottom']}
           className="lg:col-span-2"
         />
         <BentoCard
-          eyebrow="Tracking"
-          title="Performance monitoring"
-          description="Ongoing monitoring and reporting of energy performance metrics to track progress and optimise energy efficiency over time."
+          eyebrow="Reporting"
+          title="Decarbonisation Reporting"
+          description="A comprehensive review of your building, detailing how you can reduce carbon emissions, save energy and reduce energy costs, whilst incorporating renewables."
           graphic={
-						<div className="h-80 bg-[url(/services/tracking.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
+						<div className="h-80 bg-[url(/services/reporting.jpg)] bg-cover bg-no-repeat bg-opacity-90" />
 					}
 					fade={['bottom']}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
@@ -150,11 +160,11 @@ function DarkBentoSection() {
 					Guiding Principles of Our Strategy
         </Heading>
 
-				<div className='flex gap-6 flex-col md:flex-row'>
+				<div className='flex gap-6 flex-col lg:flex-row'>
 
-				<p className='mt-8 max-w-xl text-lg text-gray-50/75 sm:text-xl'>At Consult Net Zero, we emphasise a strategic and results-driven approach to sustainable retrofitting. Our methodology combines in-depth analysis of your current energy performance with tailored solutions that drive measurable improvements. We ensure that our clients are equipped with the knowledge and tools necessary to play an active role in achieving their net zero objectives.</p>
+				<p className='mt-8 max-w-xl text-lg text-gray-50/75 sm:text-xl text-justify'>At Consult Net Zero, we emphasise a strategic and results-driven approach to sustainable retrofitting. Our methodology combines in-depth analysis of your current energy performance with tailored solutions that drive measurable improvements. We ensure that our clients are equipped with the knowledge and tools necessary to play an active role in achieving their net zero objectives.</p>
 
-				<p className='mt-8 max-w-xl text-lg text-gray-50/75 sm:text-xl'>We recognise the complexities involved in sustainable retrofitting but remain focused on delivering clear pathways to success. Our team collaborates closely with social landlords and local authorities to create customized strategies that address unique challenges, optimize funding opportunities, and ultimately enhance energy efficiency across communities.</p>
+				<p className='mt-8 max-w-xl text-lg text-gray-50/75 sm:text-xl text-justify'>We recognise the complexities involved in sustainable retrofitting but remain focused on delivering clear pathways to success. Our team collaborates closely with social landlords and local authorities to create customized strategies that address unique challenges, optimize funding opportunities, and ultimately enhance energy efficiency across communities.</p>
 
 				</div>
 
@@ -192,10 +202,10 @@ function DarkBentoSection() {
           />
           <BentoCard
             dark
-            eyebrow="Analytics"
-            title="Data-Driven Insights"
-            description="Advanced analytics provide insights into your carbon footprint, enabling informed decisions and progress tracking."
-						graphic={<div className="h-80 bg-[url(/approach/analytics.jpg)] bg-cover bg-no-repeat bg-opacity-90" />}
+            eyebrow="Funding"
+            title="Access to Funding"
+            description="In-depth advocacy into your carbon footprint, empowering you to make informed decisions and effectively track progress—crucial for unlocking and maximising access to funding opportunities."
+						graphic={<div className="h-80 bg-[url(/approach/funding.jpg)] bg-cover bg-no-repeat bg-opacity-90" />}
 						fade={['top', 'bottom']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
           />
