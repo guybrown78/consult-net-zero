@@ -20,7 +20,7 @@ function CallToAction() {
 				Contact us today to start your journey towards&nbsp;net&nbsp;zero
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
+        <Button className="w-full sm:w-auto" href="/get-started">
           Get started
         </Button>
       </div>

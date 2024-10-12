@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Benefits',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    'Discover the key benefits of partnering with Consult Net Zero. From reducing carbon emissions to enhancing operational efficiency, see how our solutions drive sustainability and long-term business success.',
 }
 
 

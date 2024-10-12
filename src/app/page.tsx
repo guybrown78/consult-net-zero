@@ -19,7 +19,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   description:
-    'Consult Net Zero helps you sell more by revealing sensitive information about your customers.',
+    'Consult Net Zero provides innovative solutions to help organizations optimize their sustainability efforts and achieve Net Zero goals. Discover our tailored services and expert guidance to reduce carbon emissions and improve operational efficiency.',
 }
 
 function Hero() {
@@ -38,7 +38,7 @@ function Hero() {
 					 At Consult Net Zero, we help social landlords and local authorities to enhance energy performance, reduce fuel poverty, and create sustainable communities
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Get started</Button>
+            <Button href="/get-started">Get started</Button>
             <Button variant="secondary" href="/benefits">
               See benefits
             </Button>
