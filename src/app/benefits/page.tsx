@@ -19,7 +19,7 @@ function Benefits() {
     <Container className="my-32">
       <Subheading>Key Advantages of Retrofitting</Subheading>
       <Heading as="h3" className="mt-2">
-				Unlocking the benefits of sustainable retrofitting
+				Unlocking the benefits of high quality retrofitting
       </Heading>
       <Lead className="mt-6 max-w-3xl">
 				Retrofitting existing buildings offers a multitude of advantages that not only enhance energy efficiency but also contribute to environmental sustainability and improved living conditions. Here are three key benefits that demonstrate why retrofitting is a smart choice for social landlords and local authorities:

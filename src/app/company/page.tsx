@@ -68,11 +68,11 @@ function Header() {
           <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
               <dt className="text-sm/6 text-gray-600">
-								Of UK homes are not energy efficient enough to meet net zero targets
+								Homes in England are below an EPC C
 							</dt>
 							
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={55} end={80} />%
+                <AnimatedNumber start={3} end={8} /> million
               </dd>
 							
             </div>
@@ -82,16 +82,17 @@ function Header() {
                 <AnimatedNumber start={50} end={30} />%
               </dd>
             </div>
-            <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
-              <dt className="text-sm/6 text-gray-600">Successful retrofit projects completed across various local authorities</dt>
-              <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={82} end={100} />+
-              </dd>
-            </div>
+           
             <div className="flex flex-col gap-y-2">
               <dt className="text-sm/6 text-gray-600">Client satisfaction rate based on our tailored consultancy services</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
                 <AnimatedNumber start={85} end={95} />%
+              </dd>
+            </div>
+						<div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
+              <dt className="text-sm/6 text-gray-600">Of retrofit projects worked on</dt>
+              <dd className="order-first text-6xl font-medium tracking-tight">
+                Over &pound;<AnimatedNumber start={82} end={100} /> million
               </dd>
             </div>
           </dl>
@@ -115,7 +116,7 @@ function Team() {
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
-					At Consult Net Zero, our team is led by Lee and Kim Gately-Hall, who bring extensive experience in property consultancy and sustainability initiatives. Their passion for creating sustainable living environments drives the company&apos;s mission forward, ensuring that every project aligns with our core values of quality, integrity, and community impact.
+					At Consult Net Zero, our team is led by Lee and Kim Gatley-Hall, who bring extensive experience in property consultancy and sustainability initiatives. Their passion for creating sustainable living environments drives the company&apos;s mission forward, ensuring that every project aligns with our core values of quality, integrity, and community impact.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
 						Together, Lee and Kim foster a collaborative culture that empowers team members to innovate and excel in their roles. With a shared vision for a greener future, they are dedicated to guiding clients through their retrofitting journeys, making sustainable housing upgrades straightforward and achievable.

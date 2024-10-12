@@ -48,13 +48,14 @@ function SitemapLink(props: React.ComponentPropsWithoutRef<typeof Link>) {
 }
 
 
+
 function Sitemap() {
   return (
     <>
       <div>
         <SitemapHeading>Solutions</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="/pricing">Benefits</SitemapLink>
+          <SitemapLink href="/benefits">Benefits</SitemapLink>
           {/* <SitemapLink href="#">Analysis</SitemapLink> */}
           {/* <SitemapLink href="#">API</SitemapLink> */}
         </SitemapLinks>
@@ -77,8 +78,8 @@ function Sitemap() {
       <div>
         <SitemapHeading>Contact</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="#">(+44)7793 538 718</SitemapLink>
-          <SitemapLink href="#">lee@consultnetzero.co.uk</SitemapLink>
+          <SitemapLink href="tel:(+44)7793538718">(+44)7793 538 718</SitemapLink>
+          <SitemapLink href="mailto:lee@consultnetzero.co.uk">lee@consultnetzero.co.uk</SitemapLink>
         </SitemapLinks>
       </div>
     </>
@@ -116,14 +117,14 @@ function SocialIconLinkedIn(props: React.ComponentPropsWithoutRef<'svg'>) {
 function SocialLinks() {
   return (
     <>
-      <Link
+      {/* <Link
         href="https://facebook.com"
         target="_blank"
         aria-label="Visit us on Facebook"
         className="text-gray-950 data-[hover]:text-gray-950/75"
       >
         <SocialIconFacebook className="size-4" />
-      </Link>
+      </Link> */}
       {/* <Link
         href="https://x.com"
         target="_blank"
@@ -133,7 +134,7 @@ function SocialLinks() {
         <SocialIconX className="size-4" />
       </Link> */}
       <Link
-        href="https://linkedin.com"
+        href="https://www.linkedin.com/company/consult-net-zero"
         target="_blank"
         aria-label="Visit us on LinkedIn"
         className="text-gray-950 data-[hover]:text-gray-950/75"
