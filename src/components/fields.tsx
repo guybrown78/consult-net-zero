@@ -20,16 +20,23 @@ export function TextField({
   label,
   type = 'text',
   className = '',
+	name,
+	autoComplete,
+	required,
+	...props
 }: {
 	id:string,
   label:string,
-  type?: 'text' | "email" | "phone",
+  type?: 'text' | "email" | "tel",
+	name?: string,
+	autoComplete?: string,
+	required?: boolean
   className?: string
 }) {
   return (
     <div className={className}>
       {label && <Label id={id}>{label}</Label>}
-      <input id={id} type={type} className={formClasses} />
+      <input id={id} type={type} {...props} className={formClasses} autoComplete={autoComplete} required={required ? true : false} />
     </div>
   )
 }
@@ -39,19 +46,21 @@ export function TextAreaField({
 	id, 
 	label, 
 	className = '', 
+	name,
 	rows = 4, 
 	...props
 }: {
 	id:string,
   label:string,
   className?: string
+	name?: string,
 	rows?: number
 }){
 	return (
 		<div className={className}>
       {label && <Label id={id}>{label}</Label>}
       <textarea
-        id={id} rows={rows} className={formClasses}
+        id={id} rows={rows} {...props} className={formClasses}
       />
     </div>
 	)

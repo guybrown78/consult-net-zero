@@ -1,8 +1,9 @@
 'use client'
 
-import React, { useState, FormEvent } from 'react'
+import React, { useState } from 'react'
 import { Button } from '@/components/button'
 import { TextField, TextAreaField } from '@/components/fields'
+import type { FormEvent } from 'react'
 
 const Spinner: React.FC = () => {
   return (
