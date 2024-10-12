@@ -19,31 +19,38 @@ export function TextField({
   label,
   type = 'text',
   className = '',
-  ...props
+}: {
+	id:string,
+  label:string,
+  type?: 'text' | "email" | "phone",
+  className?: string
 }) {
   return (
     <div className={className}>
       {label && <Label id={id}>{label}</Label>}
-      <input id={id} type={type} {...props} className={formClasses} />
+      <input id={id} type={type} className={formClasses} />
     </div>
   )
 }
 
-export function SelectField({ id, label, className = '', ...props }) {
-  return (
-    <div className={className}>
-      {label && <Label id={id}>{label}</Label>}
-      <select id={id} {...props} className={clsx(formClasses, 'pr-8')} />
-    </div>
-  )
-}
 
-export function TextAreaField({ id, label, className = '', rows = 4, ...props}){
+export function TextAreaField({ 
+	id, 
+	label, 
+	className = '', 
+	rows = 4, 
+	...props
+}: {
+	id:string,
+  label:string,
+  className?: string
+	rows?: number
+}){
 	return (
 		<div className={className}>
       {label && <Label id={id}>{label}</Label>}
       <textarea
-        id={id} rows={rows} {...props} className={formClasses}
+        id={id} rows={rows} className={formClasses}
       />
     </div>
 	)
