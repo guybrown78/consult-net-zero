@@ -3,6 +3,7 @@
   "rules": {
     "prefer-const": "off", // Disable prefer-const rule
     "@next/next/no-img-element": "off", // Disable warning for <img> elements
-    "@typescript-eslint/no-unused-vars": "off" // Optionally disable unused vars warnings
+    "@typescript-eslint/no-unused-vars": "off", // Optionally disable unused vars warnings
+		"@typescript-eslint/no-explicit-any": "off"
   }
 }

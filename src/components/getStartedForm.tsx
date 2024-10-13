@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { Button } from '@/components/button'
 import { TextField, TextAreaField } from '@/components/fields'
 import type { FormEvent } from 'react'
+import Airtable from 'airtable'
 
 const Spinner: React.FC = () => {
   return (
@@ -51,20 +52,27 @@ const GetStartedForm: React.FC = () => {
     console.log('date', date)
 
     // Example Airtable API integration (commented out):
-    /*
-    base('WebsiteContactForm').create([
+		const fields = {
+			Title: event.target.title.value,
+			FirstName: event.target.first_name.value,
+			LastName: event.target.last_name.value,
+			Email: event.target.email.value,
+			Phone: event.target.phone.value,
+			Message: event.target.message.value,
+			SentDate: date,
+		}
+
+		const airtableToken:string = process.env.NEXT_PUBLIC_AIRTABLE_PERSONAL_ACCESS_TOKEN as string;
+		const airtableBase:string = process.env.NEXT_PUBLIC_AIRTABLE_BASE as string;
+		const base = new Airtable({apiKey: airtableToken}).base(airtableBase);
+
+
+
+    base('websiteMessages').create([
       {
-        "fields": {
-          FirstName: event.target.first_name.value,
-          LastName: event.target.last_name.value,
-          Email: event.target.email.value,
-          Phone: event.target.phone.value,
-          Service: event.target.service.value,
-          Message: event.target.message.value,
-          SentDate: date,
-        }
+        fields
       },
-    ], function(err, records) {
+    ], function(err:any, records:any) {
       if (err) {
         console.error(err)
         setIsError(true)
@@ -77,7 +85,7 @@ const GetStartedForm: React.FC = () => {
         setIsLoading(false)
       })
     });
-    */
+    
   }
 
   return (
