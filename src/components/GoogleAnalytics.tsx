@@ -3,7 +3,18 @@
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
-import { pageview } from '@/lib/gtagHelper';
+
+
+
+
+export const pageview = (GA_MEASUREMENT_ID: string, url: string) => {
+  if (typeof window.gtag !== 'undefined') {
+    window.gtag("config", GA_MEASUREMENT_ID, {
+      page_path: url,
+    });
+  }
+};
+
 
 interface GoogleAnalyticsProps {
   GA_MEASUREMENT_ID: string;
