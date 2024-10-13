@@ -51,14 +51,15 @@ const GetStartedForm: React.FC = () => {
 
     console.log('date', date)
 
+		const formData:any = event.target;
     // Example Airtable API integration (commented out):
 		const fields = {
-			Title: event.target.title.value,
-			FirstName: event.target.first_name.value,
-			LastName: event.target.last_name.value,
-			Email: event.target.email.value,
-			Phone: event.target.phone.value,
-			Message: event.target.message.value,
+			Title: formData.messangers_title!.value,
+			FirstName: formData.first_name!.value,
+			LastName: formData.last_name!.value,
+			Email: formData.email!.value,
+			Phone: formData.phone!.value,
+			Message: formData.message!.value,
 			SentDate: date,
 		}
 
@@ -79,7 +80,7 @@ const GetStartedForm: React.FC = () => {
         setIsLoading(false)
         return
       }
-      records.forEach(function (record) {
+      records.forEach(function (record:any) {
         console.log(record.getId())
         setIsSuccess(true)
         setIsLoading(false)
@@ -95,8 +96,8 @@ const GetStartedForm: React.FC = () => {
     >
       <TextField
         label="Title"
-        id="title"
-        name="title"
+        id="messangers_title"
+        name="messangers_title"
         type="text"
         autoComplete="title"
         required
