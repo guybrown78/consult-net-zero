@@ -2,7 +2,7 @@
 
 import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 
 export const pageview = (GA_MEASUREMENT_ID: string, url: string) => {
   if (typeof window.gtag !== 'undefined') {
@@ -22,7 +22,7 @@ declare global {
   }
 }
 
-export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: GoogleAnalyticsProps) {
+function GoogleAnalyticsComponent({ GA_MEASUREMENT_ID }: GoogleAnalyticsProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -57,5 +57,13 @@ export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: GoogleAnalyticsPr
         }}
       />
     </>
+  );
+}
+
+export default function GoogleAnalytics(props: GoogleAnalyticsProps) {
+  return (
+    <Suspense fallback={null}>
+      <GoogleAnalyticsComponent {...props} />
+    </Suspense>
   );
 }
