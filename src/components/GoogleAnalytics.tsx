@@ -4,9 +4,6 @@ import Script from 'next/script';
 import { usePathname, useSearchParams } from 'next/navigation';
 import { useEffect } from 'react';
 
-
-
-
 export const pageview = (GA_MEASUREMENT_ID: string, url: string) => {
   if (typeof window.gtag !== 'undefined') {
     window.gtag("config", GA_MEASUREMENT_ID, {
@@ -15,9 +12,14 @@ export const pageview = (GA_MEASUREMENT_ID: string, url: string) => {
   }
 };
 
-
 interface GoogleAnalyticsProps {
   GA_MEASUREMENT_ID: string;
+}
+
+declare global {
+  interface Window {
+    gtag?: (...args: any[]) => void;
+  }
 }
 
 export default function GoogleAnalytics({ GA_MEASUREMENT_ID }: GoogleAnalyticsProps) {
