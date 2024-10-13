@@ -1,5 +1,7 @@
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+
 
 export const metadata: Metadata = {
   title: {
@@ -27,6 +29,7 @@ export default function RootLayout({
           href="/blog/feed.xml"
         />
       </head>
+			<GoogleAnalytics GA_MEASUREMENT_ID='G-VECVT1S1B7'/>
       <body className="text-gray-950 antialiased">{children}</body>
     </html>
   )
